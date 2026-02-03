@@ -44,7 +44,6 @@ body{
   background-color: rgb(255, 249, 125);
 }
 .app-container{
-  border: 1px solid rgb(255, 186, 25);
   border-radius: 15px;
   padding: 20px;
   background-color: rgb(255, 252, 216);
