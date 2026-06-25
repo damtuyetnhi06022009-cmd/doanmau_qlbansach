@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {imageMap} from '../../utils/productImages';
+import { imageMap } from '../../utils/productImages';
 import './Cart.css';
 
 const Cart = () => {
@@ -10,7 +10,12 @@ const Cart = () => {
     useEffect(() => {
         const savedCart = localStorage.getItem('cart');
         if (savedCart) {
-            setCartItems(JSON.parse(savedCart));
+            try {
+                setCartItems(JSON.parse(savedCart));
+            } catch (error) {
+                console.error("Lỗi parse giỏ hàng:", error);
+                setCartItems([]);
+            }
         }
     }, []);
 
@@ -20,18 +25,20 @@ const Cart = () => {
         window.dispatchEvent(new Event('cartUpdated'));
     };
 
+    // ĐÃ SỬA: Ép kiểu String cho cả 2 ID trước khi so sánh thương thích
     const increaseQuantity = (productId) => {
         const updatedCart = cartItems.map(item =>
-            item.id === productId
+            String(item.id) === String(productId)
                 ? { ...item, quantity: item.quantity + 1 }
                 : item
         );
         updateCart(updatedCart);
     };
 
+    // ĐÃ SỬA: Ép kiểu String cho cả 2 ID trước khi so sánh thương thích
     const decreaseQuantity = (productId) => {
         const updatedCart = cartItems.map(item => {
-            if (item.id === productId) {
+            if (String(item.id) === String(productId)) {
                 if (item.quantity > 1) {
                     return { ...item, quantity: item.quantity - 1 };
                 } else {
@@ -43,15 +50,24 @@ const Cart = () => {
         updateCart(updatedCart);
     };
 
+    // ĐÃ SỬA: Ép kiểu String khi loại bỏ phần tử
     const removeItem = (productId) => {
-        const updatedCart = cartItems.filter(item => item.id !== productId);
+        const updatedCart = cartItems.filter(item => String(item.id) !== String(productId));
         updateCart(updatedCart);
+    };
+
+    // ĐA SỬA: Hàm bóc tách giá tiền thông minh, chấp nhận cả biến dạng Số lẫn dạng Chuỗi số
+    const parsePrice = (priceVal) => {
+        if (!priceVal) return 0;
+        if (typeof priceVal === 'number') return priceVal;
+        // Nếu là chuỗi, tiến hành xóa sạch các ký tự không phải số (đọc chữ đ, dấu chấm, dấu phẩy)
+        const cleanedPrice = String(priceVal).replace(/[^\d]/g, '');
+        return parseFloat(cleanedPrice) || 0;
     };
 
     const calculateTotal = () => {
         return cartItems.reduce((total, item) => {
-            const price = parseFloat(item.currentPrice.replace(/[^\d]/g, '')) || 0;
-            return total + (price * item.quantity);
+            return total + (parsePrice(item.currentPrice) * item.quantity);
         }, 0);
     };
 
@@ -79,20 +95,22 @@ const Cart = () => {
             <div className="cart-content">
                 <div className="cart-items">
                     {cartItems.map((item) => {
-                        const price = parseFloat(item.currentPrice.replace(/[^\d]/g, '')) || 0;
-                        const itemTotal = price * item.quantity;
+                        const itemTotal = parsePrice(item.currentPrice) * item.quantity;
 
                         return (
                             <div key={item.id} className="cart-item">
                                 <div className="cart-item-image">
-<img
+                                    <img
                                         src={item.image || imageMap[item.imageKey] || 'https://via.placeholder.com/150'}
                                         alt={item.name}
                                     />
                                 </div>
                                 <div className="cart-item-info">
                                     <h3 className="cart-item-name">{item.name}</h3>
-                                    <p className="cart-item-price">{item.currentPrice}</p>
+                                    <p className="cart-item-price">
+                                        {/* Hiển thị chuẩn hóa giao diện tiền xu nếu dữ liệu truyền vào là số thuần tuý */}
+                                        {typeof item.currentPrice === 'number' ? formatPrice(item.currentPrice) : item.currentPrice}
+                                    </p>
                                 </div>
                                 <div className="cart-item-quantity">
                                     <button

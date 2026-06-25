@@ -41,10 +41,12 @@ function App() {
         />
         <Route path="/product/:id" element={<DetailProduct />} />
         <Route path="/cart" element={<Cart />} />
+
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/" element={<Login />} />
+
         <Route path="/admin" element={<Admin />} />
         <Route path="products" element={<AdminProduct />} />
         <Route path="categories" element={<AdminCategory />} />

@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
-/* =========================
-   RESET + LAYOUT
-========================= */
 .ruang-layout,
 .ruang-layout * {
   box-sizing: border-box;
@@ -23,9 +20,6 @@
   background: #f8f9fc;
 }
 
-/* =========================
-   OVERLAY
-========================= */
 .ruang-overlay {
   display: none;
   position: fixed;
@@ -54,10 +48,7 @@
   z-index: 999;
   width: 224px;
   min-height: 100vh;
-  background: linear-gradient(180deg,
-      #6777ef 0%,
-      #5568dd 48%,
-      #4c5dce 100%);
+  background: rgb(76, 136, 255);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -255,6 +246,7 @@
 .ruang-main {
   flex: 1;
   padding: 1.5rem;
+  width: 1300px;
 }
 
 .ruang-cards {
@@ -390,7 +382,7 @@
 }
 
 /* =========================
-   TABLE & ACTIONS
+   TABLE
 ========================= */
 .admin-table-wrap {
   overflow-x: auto;
@@ -428,38 +420,30 @@
   border-bottom: none;
 }
 
-/* SỬA LỖI: Tạo khoảng cách giữa 2 nút bấm trong hàng */
 .admin-table__actions {
-  display: flex !important;
-  gap: 8px !important; 
+  display: flex;
+  gap: 8px;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 /* =========================
-   BUTTONS (Chính / Form)
+   BUTTONS
 ========================= */
 .admin-btn {
-  padding: 8px 18px !important;
-  font-size: 0.85rem !important;
-  font-weight: 700 !important;
-  border-radius: 8px !important;
-  border: 1px solid transparent !important;
-  background: #6777ef !important; /* Dùng màu thuần để chống lỗi đen */
-  color: #fff !important;
+  padding: 10px 18px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  background: rgb(35, 71, 134);
+  color: #fff;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(103, 119, 239, 0.2);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  transition: all 0.2s ease;
+  box-shadow: 0 2px 10px rgba(103, 119, 239, 0.35);
+  transition: opacity 0.18s ease, transform 0.12s ease;
 }
 
 .admin-btn:hover:not(:disabled) {
-  background: #5568dc !important;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(103, 119, 239, 0.3);
+  opacity: 0.95;
 }
 
 .admin-btn:active:not(:disabled) {
@@ -467,19 +451,15 @@
 }
 
 .admin-btn:disabled {
-  opacity: 0.5 !important;
-  cursor: not-allowed !important;
-  box-shadow: none !important;
-}
-
-.admin-btn--ghost {
-  background: #eaecf4 !important;
-  color: #4e73df !important;
+  opacity: 0.55;
+  cursor: not-allowed;
   box-shadow: none;
 }
 
-.admin-btn--ghost:hover:not(:disabled) {
-  background: #dddfeb !important;
+.admin-btn--ghost {
+  background: #eaecf4;
+  color: #5a5c69;
+  box-shadow: none;
 }
 
 /* =========================
@@ -637,31 +617,21 @@
 }
 
 .ruang-modal__btn {
-  padding: 8px 16px !important;
+  padding: 10px 18px;
   font-family: inherit;
-  font-weight: 700 !important;
-  font-size: 0.8125rem !important;
-  border-radius: 8px !important;
+  font-weight: 800;
+  font-size: 0.8125rem;
+  border-radius: 8px;
   cursor: pointer;
-  border: 1px solid #d1d3e2 !important;
-  background: #fff !important;
-  color: #6e707e !important;
-  transition: all 0.15s ease;
-}
-
-.ruang-modal__btn:hover {
-  background: #f8f9fc !important;
-  border-color: #b7b9cc !important;
+  border: 1px solid #d1d3e2;
+  background: #fff;
+  color: #858796;
 }
 
 .ruang-modal__btn--danger {
-  background: #e74a3b !important;
-  color: #fff !important;
-  border-color: transparent !important;
-}
-
-.ruang-modal__btn--danger:hover {
-  background: #d94233 !important;
+  background: linear-gradient(180deg, #e74a3b 0%, #d94233 100%);
+  border-color: transparent;
+  color: #fff;
 }
 
 /* =========================
@@ -790,20 +760,14 @@
    MINI BUTTON
 ========================= */
 .ruang-mini-btn {
-  border: none !important;
-  background: #ef4d4d !important;
-  color: #fff !important;
-  border-radius: 6px !important;
-  padding: 5px 10px !important;
-  font-size: 0.75rem !important;
-  font-weight: 700 !important;
+  border: none;
+  background: linear-gradient(180deg, #ff6666 0%, #ef4d4d 100%);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.ruang-mini-btn:hover {
-  background: #e74a3b !important;
-  transform: translateY(-1px);
 }
 
 /* =========================
@@ -844,20 +808,14 @@
    DETAIL BUTTON
 ========================= */
 .ruang-detail-btn {
-  border: none !important;
-  border-radius: 6px !important;
-  color: #fff !important;
-  font-size: 0.75rem !important;
-  font-weight: 700 !important;
-  padding: 5px 12px !important;
-  background: #6777ef !important;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.45rem 0.7rem;
+  background: linear-gradient(180deg, #6777ef 0%, #5a6be2 100%);
   cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.ruang-detail-btn:hover {
-  background: #5568dc !important;
-  transform: translateY(-1px);
 }
 
 /* =========================
@@ -970,43 +928,36 @@
 }
 
 /* =========================
-   TABLE BUTTONS (Sửa triệt để lỗi màu đen)
+   TABLE BUTTONS
 ========================= */
 .admin-table__link {
-  padding: 6px 14px !important; /* Tăng nhẹ chiều ngang nút bấm */
-  font-size: 0.75rem !important;
-  font-weight: 700 !important;
-  border: 1px solid transparent !important;
-  border-radius: 6px !important;
-  cursor: pointer !important;
-  background: #6777ef !important; /* Ép nút Sửa màu xanh tím */
-  color: #fff !important;         /* Chữ trắng */
-  display: inline-block !important;
-  text-align: center !important;
-  transition: all 0.15s ease !important;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #6777ef;
+  color: #fff;
 }
 
 .admin-table__link:hover:not(:disabled) {
-  background: #4c5dce !important; /* Hover nút sửa đậm hơn chút */
-  transform: translateY(-1px) !important;
-}
-
-/* Nút Xóa (Màu đỏ nhạt sang chảnh, hover lên đỏ rực) */
-.admin-table__link--danger {
-  background: #fdecec !important; /* Nền đỏ hồng nhạt cực đẹp */
-  color: #e74a3b !important;       /* Chữ màu đỏ */
-  border: 1px solid #f5bdbd !important;
-}
-
-.admin-table__link--danger:hover:not(:disabled) {
-  background: #e74a3b !important; /* Hover chuyển thành nền đỏ rực */
-  color: #fff !important;         /* Chữ trắng */
-  border-color: #e74a3b !important;
+  background: #5568dc;
 }
 
 .admin-table__link:disabled {
-  opacity: 0.5 !important;
-  cursor: not-allowed !important;
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.admin-table__link--danger {
+  background: transparent;
+  color: #e74a3b;
+  border: 1px solid #f8cdca;
+}
+
+.admin-table__link--danger:hover:not(:disabled) {
+  background: #fef2f2;
 }
 
 /* =========================
@@ -1211,7 +1162,6 @@
   background: transparent;
   color: #fff;
   cursor: pointer;
-  transition: background 0.15s ease;
 }
 
 .admin-topbar__btn:hover {
@@ -1222,11 +1172,6 @@
   background: #fff;
   border-color: #fff;
   color: #6777ef;
-}
-
-.admin-topbar__btn--primary:hover {
-  background: #f8f9fc;
-  opacity: 0.95;
 }
 
 .admin-body {

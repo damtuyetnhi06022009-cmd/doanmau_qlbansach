@@ -94,7 +94,7 @@ const Header = () => {
 
         const loadProducts = async () => {
             try {
-                const res = await fetch(`${jsonBase}products.json`);
+                const res = await fetch(`${jsonBase}product.json`);
                 if (!res.ok) return;
 
                 const data = await res.json();

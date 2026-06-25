@@ -1,6 +1,6 @@
 .phuclong-header {
     background-color: #9e877a;
-    width: 100%;
+    width: 113%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -243,10 +243,11 @@
 }
 
 /* --- THANH TÌM KIẾM SẢN PHẨM --- */
+/* --- THANH TÌM KIẾM SẢN PHẨM --- */
 .header-search-strip {
-    background-color: #f5f5f5;
-    padding: 8px 20px;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #f8f9fa; /* Màu nền xám nhạt nhẹ nhàng hơn */
+    padding: 12px 20px;       /* Tăng padding một chút để tạo không gian thoáng */
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .header-search-strip__inner {
@@ -259,52 +260,68 @@
     display: flex;
     align-items: center;
     background: white;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    padding: 2px 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 30px;      /* Bo tròn hẳn nhìn sẽ hiện đại và mềm mại hơn */
+    padding: 4px 6px 4px 16px; /* Chừa khoảng trống bên trái cho icon, thu hẹp khoảng trống nút bấm */
+    transition: all 0.3s ease;  /* Tạo hiệu ứng mượt mà */
+}
+
+/* Hiệu ứng đổi màu viền khi người dùng click vào ô tìm kiếm */
+.header-search-form:focus-within {
+    border-color: #1a472a;
+    box-shadow: 0 0 0 3px rgba(26, 71, 42, 0.15);
 }
 
 .header-search-icon {
     color: #888888;
-    margin-right: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .header-search-input {
     flex: 1;
     border: none;
     outline: none;
-    padding: 6px 0;
+    padding: 8px 0;
     font-size: 14px;
+    color: #333;
+    background: transparent;
 }
 
+/* Tinh chỉnh lại nút Tìm Kiếm */
 .header-search-submit {
     background: #1a472a;
     color: white;
     border: none;
-    padding: 6px 16px;
-    border-radius: 4px;
+    padding: 8px 24px;       /* Tăng chiều rộng nút bấm để dễ thao tác */
+    border-radius: 20px;     /* Bo tròn đồng bộ với thanh tìm kiếm */
     cursor: pointer;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
+    transition: background 0.2s ease;
 }
 
 .header-search-submit:hover {
     background: #11301c;
 }
 
+/* --- DROPDOWN GỢI Ý KẾT QUẢ --- */
 .header-search-dropdown {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 8px);   /* Thêm khoảng cách nhỏ với thanh tìm kiếm */
     left: 0;
     width: 100%;
     background: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;      /* Bo góc hộp kết quả dropdown */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1); /* Đổ bóng mịn hơn */
     z-index: 2000;
     list-style: none;
-    margin: 4px 0 0 0;
-    padding: 0;
-    max-height: 350px;
+    margin: 0;
+    padding: 6px 0;
+    max-height: 380px;
     overflow-y: auto;
 }
 
@@ -312,13 +329,18 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 8px 12px;
+    gap: 14px;
+    padding: 10px 16px;      /* Tăng nhẹ padding cho thoáng */
     background: none;
     border: none;
     text-align: left;
     cursor: pointer;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f5f5f5;
+    transition: background 0.2s;
+}
+
+.header-search-option:last-child {
+    border-bottom: none;     /* Xóa đường viền ở item cuối cùng */
 }
 
 .header-search-option:hover {
@@ -326,27 +348,30 @@
 }
 
 .header-search-thumb {
-    width: 40px;
-    height: 40px;
+    width: 45px;             /* Tăng kích thước ảnh thumb sản phẩm lên một chút */
+    height: 45px;
     object-fit: cover;
+    border-radius: 4px;      /* Bo góc nhẹ cho hình ảnh sản phẩm */
 }
 
 .header-search-name {
     font-size: 14px;
     color: #333;
+    font-weight: 500;        /* Cho chữ đậm hơn một chút */
     display: block;
+    margin-bottom: 2px;
 }
 
 .header-search-price {
-    font-size: 12px;
+    font-size: 13px;
     color: #c8102e;
     font-weight: bold;
 }
 
 .header-search-empty {
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    color: #666;
+    color: #777;
     font-size: 14px;
 }
 
