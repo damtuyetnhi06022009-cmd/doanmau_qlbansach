@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "user": "admin@gmail.com",
+    "pass": "123",
+    "name": "Tuyết Nhi",
+    "role": "staff"
+  },
+  {
+    "id": 2,
+    "user": "khachhang@gmail.com",
+    "pass": "456",
+    "name": "Nguyễn Văn An",
+    "role": "customer"
+  }
+]

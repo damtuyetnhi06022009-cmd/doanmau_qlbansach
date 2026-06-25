@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "name":"Sách Văn Học"
+    },
+    {
+        "id":2,
+        "name":"Sách Mỹ Thuật"
+    },
+    {
+        "id":3,
+        "name":"Sách Kinh Tế"
+    },
+    {
+        "id":4,
+        "name":"Sách Kỹ Năng Sống"
+    },
+    {
+        "id":5,
+        "name":"Sách Học Ngoại Ngữ"
+    },
+    {
+        "id":6,
+        "name":"Sách Du Lịch"
+    },
+    {
+        "id":7,
+        "name":"Sách Tâm Lý Học"
+    },
+    {
+        "id":8,
+        "name":"Sách Khoa Học Kỹ Thuật"
+    },
+    {
+        "id":9,
+        "name":"Sách Lịch Sử"
+    },
+    {
+        "id":10,
+        "name":"Sách Giáo Khoa"
+    }
+]

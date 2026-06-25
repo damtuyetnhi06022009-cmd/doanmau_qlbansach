@@ -1,0 +1,410 @@
+[
+  {
+    "id": "KH001",
+    "name": "Trần Minh Quang",
+    "phone": "123456789",
+    "email": "quangtran9x@gmail.com",
+    "address": "45 Lê Lợi, Phường 2, Vũng Tàu",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH002",
+    "name": "Nguyễn Thị Mai",
+    "phone": "234567891",
+    "email": "mainguyen@gmail.com",
+    "address": "12 Nơ Trang Long, Bình Thạnh, TP.HCM",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH003",
+    "name": "Phạm Hoàng Long",
+    "phone": "345678912",
+    "email": "longpham.kd@gmail.com",
+    "address": "789 Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "type": "Doanh nghiệp"
+  },
+  {
+    "id": "KH004",
+    "name": "Lê Phan Hoàng Yến",
+    "phone": "456789123",
+    "email": "yenlph@yahoo.com",
+    "address": "101 Trần Hưng Đạo, Quận 1, TP.HCM",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH005",
+    "name": "Công ty TNHH Minh Đức",
+    "phone": "567891234",
+    "email": "contact@minhduc.vn",
+    "address": "Cụm CN Tân Bình, Tân Phú, TP.HCM",
+    "type": "Doanh nghiệp"
+  },
+  {
+    "id": "KH006",
+    "name": "Đặng Hoàng Nam",
+    "phone": "678912345",
+    "email": "namdang92@gmail.com",
+    "address": "215 Lê Văn Sỹ, Quận 3, TP.HCM",
+    "type": "Đại lý"
+  },
+  {
+    "id": "KH007",
+    "name": "Vũ Thu Thảo",
+    "phone": "789123456",
+    "email": "thaovu.tu@gmail.com",
+    "address": "56 Hùng Vương, Ba Đình, Hà Nội",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH008",
+    "name": "Đỗ Anh Tuấn",
+    "phone": "891234567",
+    "email": "tuanda.tech@gmail.com",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH009",
+    "name": "Bùi Minh Tuấn",
+    "phone": "912345678",
+    "email": "tuanbui.m@gmail.com",
+    "address": "142 Điện Biên Phủ, Quận 3, TP.HCM",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH010",
+    "name": "Đại lý Nông sản Xanh",
+    "phone": "123456790",
+    "email": "nongsanxanh@gmail.com",
+    "address": "Chợ đầu mối Long Biên, Ba Đình, Hà Nội",
+    "type": "Đại lý"
+  },
+  {
+    "id": "KH011",
+    "name": "Ngô Quốc Bảo",
+    "phone": "123456791",
+    "email": "baongo.quoc@gmail.com",
+    "address": "34 Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH012",
+    "name": "Hoàng Thúy Hà",
+    "phone": "123456792",
+    "email": "hahoangthuy@gmail.com",
+    "address": "105 Lê Duẩn, Hoàn Kiếm, Hà Nội",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH013",
+    "name": "Lê Văn Hùng",
+    "phone": "123456793",
+    "email": "hunglevan@gmail.com",
+    "address": "12 Lạch Tray, Ngô Quyền, Hải Phòng",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH014",
+    "name": "Nguyễn An Bình",
+    "phone": "123456794",
+    "email": "binhan.nguyen@gmail.com",
+    "address": "456 Trần Phú, Nha Trang, Khánh Hòa",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH015",
+    "name": "Tập đoàn Đại Phát",
+    "phone": "123456795",
+    "email": "info@daiphatgroup.com",
+    "address": "Tòa nhà Landmark 81, Bình Thạnh, TP.HCM",
+    "type": "Doanh nghiệp"
+  },
+  {
+    "id": "KH016",
+    "name": "Phan Thị Ngọc Hân",
+    "phone": "123456796",
+    "email": "hanphan.ngoc@gmail.com",
+    "address": "89 Cách Mạng Tháng Tám, Quận 10, TP.HCM",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH017",
+    "name": "Dương Văn Khang",
+    "phone": "123456797",
+    "email": "khangduong@gmail.com",
+    "address": "312 Quang Trung, Gò Vấp, TP.HCM",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH018",
+    "name": "Trần Thị Hồng Thắm",
+    "phone": "123456798",
+    "email": "thamhongtran@gmail.com",
+    "address": "74 Nguyễn Huệ, Quận 1, TP.HCM",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH019",
+    "name": "Cửa hàng Tiện ích 247",
+    "phone": "123456799",
+    "email": "tienich247@gmail.com",
+    "address": "52 Võ Văn Kiệt, Quận 1, TP.HCM",
+    "type": "Đại lý"
+  },
+  {
+    "id": "KH020",
+    "name": "Lý Hoàng Nam",
+    "phone": "123456800",
+    "email": "namlyhoang@gmail.com",
+    "address": "18 Xuân Thủy, Cầu Giấy, Hà Nội",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH021",
+    "name": "Vũ Đình Phong",
+    "phone": "123456801",
+    "email": "phongvudinh@gmail.com",
+    "address": "67 Độc Lập, Tân Phú, TP.HCM",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH022",
+    "name": "Nguyễn Bích Thủy",
+    "phone": "123456802",
+    "email": "thuybichnguyen@gmail.com",
+    "address": "90 Lê Hồng Phong, Quy Nhơn, Bình Định",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH023",
+    "name": "Công ty XNK Toàn Cầu",
+    "phone": "123456803",
+    "email": "import@globalxnk.vn",
+    "address": "Khu Ngoại Giao Đoàn, Bắc Từ Liêm, Hà Nội",
+    "type": "Doanh nghiệp"
+  },
+  {
+    "id": "KH024",
+    "name": "Trịnh Quốc Anh",
+    "phone": "123456804",
+    "email": "anhtrinhquoc@gmail.com",
+    "address": "153 Tôn Đức Thắng, Đống Đa, Hà Nội",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH025",
+    "name": "Mai Thanh Sơn",
+    "phone": "123456805",
+    "email": "sonmaithanh@gmail.com",
+    "address": "220 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH026",
+    "name": "Đặng Thị Diễm My",
+    "phone": "123456806",
+    "email": "mydangdiem@gmail.com",
+    "address": "14 Hoàng Diệu, Hải Châu, Đà Nẵng",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH027",
+    "name": "Đại lý Bách Hóa Sài Gòn",
+    "phone": "123456807",
+    "email": "bachhoasaigon@gmail.com",
+    "address": "55 Tháp Mười, Quận 6, TP.HCM",
+    "type": "Đại lý"
+  },
+  {
+    "id": "KH028",
+    "name": "Vũ Minh Huy",
+    "phone": "123456808",
+    "email": "huyvuminh@gmail.com",
+    "address": "19 Cao Thắng, Quận 3, TP.HCM",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH029",
+    "name": "Đỗ Thu Trang",
+    "phone": "123456809",
+    "email": "trangdothu@gmail.com",
+    "address": "81 Trần Phú, Vinh, Nghệ An",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH030",
+    "name": "Nguyễn Tiến Đạt",
+    "phone": "123456810",
+    "email": "datnguyentien@gmail.com",
+    "address": "11 Trầm Hương, Lộc Thọ, Nha Trang",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH031",
+    "name": "Công ty Cổ phần Thành Phát",
+    "phone": "123456811",
+    "email": "contact@thanhphat.com.vn",
+    "address": "KCN Hòa Khánh, Liên Chiểu, Đà Nẵng",
+    "type": "Doanh nghiệp"
+  },
+  {
+    "id": "KH032",
+    "name": "Hồ Xuân Hương",
+    "phone": "123456812",
+    "email": "huonghoxuan@gmail.com",
+    "address": "94 Phan Đình Phùng, Đà Lạt, Lâm Đồng",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH033",
+    "name": "Trần Đình Trọng",
+    "phone": "123456813",
+    "email": "trongtrandinh@gmail.com",
+    "address": "123 Lê Lợi, TP. Huế, Thừa Thiên Huế",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH034",
+    "name": "Bùi Phương Thảo",
+    "phone": "123456814",
+    "email": "thaobuiphuong@gmail.com",
+    "address": "40 Tô Hiệu, Lê Chân, Hải Phòng",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH035",
+    "name": "Nông Sản An Bình Miền Tây",
+    "phone": "123456815",
+    "email": "anbinhmientay@gmail.com",
+    "address": "Chợ nổi Cái Răng, Cái Răng, Cần Thơ",
+    "type": "Đại lý"
+  },
+  {
+    "id": "KH036",
+    "name": "Nguyễn Hoàng Long",
+    "phone": "123456816",
+    "email": "longnguyenhoang@gmail.com",
+    "address": "88 Mậu Thân, Ninh Kiều, Cần Thơ",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH037",
+    "name": "Phạm Minh Tuấn",
+    "phone": "123456817",
+    "email": "tuanphamminh@gmail.com",
+    "address": "16 Hòa Bình, Ninh Kiều, Cần Thơ",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH038",
+    "name": "Vũ Hoàng Yến",
+    "phone": "123456818",
+    "email": "yenvuhoang@gmail.com",
+    "address": "25 Đại Lộ Bình Dương, Thủ Dầu Một, Bình Dương",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH039",
+    "name": "Chuỗi Siêu Thị Minimart",
+    "phone": "123456819",
+    "email": "purchasing@minimart.vn",
+    "address": "100 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+    "type": "Đại lý"
+  },
+  {
+    "id": "KH040",
+    "name": "Đặng Quốc Khánh",
+    "phone": "123456820",
+    "email": "khanhdangquoc@gmail.com",
+    "address": "12 Âu Cơ, Tây Hồ, Hà Nội",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH041",
+    "name": "Nguyễn Thị Kim Oanh",
+    "phone": "123456821",
+    "email": "oanhnguyenkim@gmail.com",
+    "address": "76 Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH042",
+    "name": "Tống Văn Hải",
+    "phone": "123456822",
+    "email": "haitongvan@gmail.com",
+    "address": "54 Lê Lai, Máy Chai, Ngô Quyền, Hải Phòng",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH043",
+    "name": "Công ty Đầu tư và Phát triển Hải Đăng",
+    "phone": "123456823",
+    "email": "info@haidangnt.vn",
+    "address": "22 Hùng Vương, Lộc Thọ, Nha Trang",
+    "type": "Doanh nghiệp"
+  },
+  {
+    "id": "KH044",
+    "name": "Lê Hồng Đăng",
+    "phone": "123456824",
+    "email": "danglehong@gmail.com",
+    "address": "112 Yersin, Thủ Dầu Một, Bình Dương",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH045",
+    "name": "Phan Mỹ Linh",
+    "phone": "123456825",
+    "email": "linhphanmymap@gmail.com",
+    "address": "64 Đồng Khởi, Biên Hòa, Đồng Nai",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH046",
+    "name": "Nguyễn Văn Tâm",
+    "phone": "123456826",
+    "email": "tamnguyenvan@gmail.com",
+    "address": "78 Phạm Văn Thuận, Biên Hòa, Đồng Nai",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH047",
+    "name": "Nhà phân phối Hàng Tiêu Dùng Miền Bắc",
+    "phone": "123456827",
+    "email": "nppmienbac@gmail.com",
+    "address": "KCN Đài Tư, Long Biên, Hà Nội",
+    "type": "Đại lý"
+  },
+  {
+    "id": "KH048",
+    "name": "Lâm Hoài Bảo",
+    "phone": "123456828",
+    "email": "baolamhoai@gmail.com",
+    "address": "32 Nguyễn Trãi, Mỹ Long, Long Xuyên, An Giang",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH049",
+    "name": "Trần Thu Hà",
+    "phone": "123456829",
+    "email": "hatranthu@gmail.com",
+    "address": "15 Trần Hưng Đạo, Mỹ Bình, Long Xuyên, An Giang",
+    "type": "Cá nhân"
+  },
+  {
+    "id": "KH050",
+    "name": "Công ty Logistics Phương Nam",
+    "phone": "123456830",
+    "email": "operation@phuongnamlogistics.com",
+    "address": "12 Cửu Long, Tân Bình, TP.HCM",
+    "type": "Doanh nghiệp"
+  },
+  {
+    "id": "KH051",
+    "name": "Nguyễn Thành Vinh",
+    "phone": "123456831",
+    "email": "vinhnguyenthanh@gmail.com",
+    "address": "89 Ba Cu, Phường 4, Vũng Tàu",
+    "type": "Cá nhân"
+  }
+]

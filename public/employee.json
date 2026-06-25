@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Võ Nguyễn Phương Uyên",
+        "phone": 1234567891,
+        "email": "pu@gmail.com",
+        "salary": 15000000,
+        "status": "Đang làm việc",
+        "posittion": "Quản trị viên hệ thống"
+    },
+    {
+        "id": 2,
+        "name": "Phạm Đình Thái Ngân",
+        "phone": 1234567892,
+        "email": "nganpdt@gmail.com",
+        "salary": 10500000,
+        "status": "Đang làm việc",
+        "posittion": "Nhân viên marketing"
+    },
+    {
+        "id": 3,
+        "name": "Nguyễn Ngọc Quỳnh Nhi",
+        "phone": 1234567893,
+        "email": "nhinnq@gmail.com",
+        "salary": 8500000,
+        "status": "Đang làm việc",
+        "posittion": "Nhân viên bán hàng"
+    },
+    {
+        "id": 4,
+        "name": "Nguyễn Ngọc Quỳnh Như",
+        "phone": 1234567894,
+        "email": "nhunnq@gmail.com",
+        "salary": 8500000,
+        "status": "Đang làm việc",
+        "posittion": "Nhân viên chăm sóc khách hàng"
+    },
+    {
+        "id": 5,
+        "name": "Ngô Đặng Yến Nhi",
+        "phone": 1234567895,
+        "email": "nhindy@gmail.com",
+        "salary": 8000000,
+        "status": "Đang làm việc",
+        "posittion": "Nhân viên giao hàng"
+    },
+    {
+        "id": 6,
+        "name": "Võ Phạm Khánh Vân",
+        "phone": 1234567896,
+        "email": "vanvpk@gmail.com",
+        "salary": 9500000,
+        "status": "Đang làm việc",
+        "posittion": "Nhân viên quản lý nội dung"
+    },
+    {
+        "id": 7,
+        "name": "Phùng Nguyễn Cát Tường",
+        "phone": 1234567897,
+        "email": "tuongpnct@gmail.com",
+        "salary": 10000000,
+        "status": "Đang làm việc",
+        "posittion": "Nhân viên quản lý kho"
+    },
+    {
+        "id": 8,
+        "name": "Kiều Gia Hân",
+        "phone": 1234567898,
+        "email": "hankg@gmail.com",
+        "salary": 14000000,
+        "status": "Đang làm việc",
+        "posittion": "Quản lý cửa hàng"
+    },
+    {
+        "id": 9,
+        "name": "Lê Nguyễn Mai Quỳnh",
+        "phone": 1234567899,
+        "email": "quynhnmq@gmail.com",
+        "salary": 11000000,
+        "status": "Đang làm việc",
+        "posittion": "Nhân viên kỹ thuật"
+    },
+    {
+        "id": 10,
+        "name": "Lê Thanh Hoàng",
+        "phone": 1234567900,
+        "email": "hoanglt@gmail.com",
+        "salary": 10000000,
+        "status": "Đang làm việc",
+        "posittion": "Nhân viên kế toán"
+    }
+]
