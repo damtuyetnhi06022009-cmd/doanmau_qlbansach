@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './ProductCard.css';
 
 // Chỉ giữ lại 1 biến cấu hình url chuẩn duy nhất
-const productsUrl = `${import.meta.env.BASE_URL}products.json`;
+const productsUrl = `${import.meta.env.BASE_URL}product.json`;
 
 const ProductCard = ({ product }) => {
     const navigate = useNavigate();

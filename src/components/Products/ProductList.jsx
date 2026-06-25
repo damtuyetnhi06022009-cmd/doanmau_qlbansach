@@ -18,7 +18,7 @@ const ProductList = () => {
         const loadData = async () => {
             try {
                 const [productsRes, categoriesRes] = await Promise.all([
-                    fetch(`${jsonBase}products.json`), // Đã đổi sang products.json cho đồng bộ
+                    fetch(`${jsonBase}product.json`), // Đã đổi sang products.json cho đồng bộ
                     fetch(`${jsonBase}category.json`)
                 ]);
                 

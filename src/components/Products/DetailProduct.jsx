@@ -18,7 +18,7 @@ const DetailProduct = () => {
         const fetchProduct = async () => {
             try {
                 // Thử fetch dữ liệu từ public/products.json
-                const response = await fetch('/products.json');
+                const response = await fetch('/product.json');
                 if (!response.ok) {
                     throw new Error('Không thể tải danh sách sản phẩm');
                 }
